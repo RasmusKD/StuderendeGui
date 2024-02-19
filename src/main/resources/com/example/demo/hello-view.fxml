@@ -10,16 +10,16 @@
 <?import javafx.scene.layout.BorderPane?>
 <BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo.HelloController">
   <center>
-    <VBox alignment="CENTER" spacing="20.0">
+    <VBox alignment="TOP_CENTER" spacing="10.0">
       <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
       </padding>
+      <Label text="Søg stamoplysninger:"/>
       <HBox alignment="TOP_CENTER" spacing="10">
         <TextField fx:id="searchfield" promptText="Indtast studienummer" />
         <Button text="Søg" onAction="#hentStamoplysninger"/>
       </HBox>
       <Label fx:id="resultLabel"/>
-
     </VBox>
   </center>
 </BorderPane>

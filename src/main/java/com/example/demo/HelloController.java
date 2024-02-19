@@ -11,7 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class HelloController {
-    private UseCase useCase = new UseCase(new DbSql()); // Antager at du initialiserer det her
+    private UseCase useCase = new UseCase(new DbSql());
 
     @FXML
     private TextField searchfield;
@@ -34,7 +34,6 @@ public class HelloController {
             resultLabel.setText("Fejl ved søgning: " + e.getMessage());
         }
     }
-
 
     public String formatStuderendeInfo(Studerende studerende) {
         StringBuilder sb = new StringBuilder();
